@@ -1,0 +1,110 @@
+.contact{
+  height: 99vh;
+  padding: 1px;
+  background: linear-gradient(135deg,  #3e3e3e, #ea3aed , #3e3e3e );
+}
+
+.contact h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 0%;
+}
+
+
+.contact-section {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+/* Left Section - Contact Info */
+.contact-left {
+  width: 50%;
+  height: 300px;
+}
+
+.contact-left h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.contact-left p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  margin-top: 50px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: aquamarine;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-item a:hover {
+  transform: scale(1.1);
+}
+
+/* Icon Styles */
+.social-item svg {
+  font-size: 24px;
+}
+
+
+/* Individual social media colors */
+/* .github a { color: #333; }
+.linkedin a { color: #0077b5; }
+.x a { color: #1da1f2; }
+.instagram a { color: #e4405f; } */
+
+/* Right Section - Map */
+.contact-right {
+  width: 50%;
+}
+
+
+.contact-right iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .contact-right iframe {
+    height: 250px;
+  }
+}

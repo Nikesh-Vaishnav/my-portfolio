@@ -1,14 +1,16 @@
-import './Footer.css';
+import "./styles/Footer.css";
+import { Link } from "react-router-dom";
 import { FaHome, FaUser, FaProjectDiagram, FaTools, FaEnvelope } from "react-icons/fa";
+
 function Footer() {
   return (
     <div className="footer">
       <ul>
-        <li><a href='#'><FaHome className='logo'/><br/>HOME</a></li>
-        <li><a href='#'><FaUser className='logo'/><br/>About</a></li>
-        <li><a href='#'><FaProjectDiagram className='logo'/><br/>Skill</a></li>
-        <li><a href='#'><FaTools className='logo'/><br/>Projects</a></li>
-        <li><a href='#'><FaEnvelope className='logo'/><br/>Contect Us</a></li>
+        <li><Link to="/"><FaHome className="logo"/><br/>HOME</Link></li>
+        <li><Link to="/about"><FaUser className="logo"/><br/>About</Link></li>
+        <li><Link to="/skills"><FaProjectDiagram className="logo"/><br/>Skills</Link></li>
+        <li><Link to="/projects"><FaTools className="logo"/><br/>Projects</Link></li>
+        <li><Link to="/contact"><FaEnvelope className="logo"/><br/>Contact Us</Link></li>
       </ul>
     </div>
   );
