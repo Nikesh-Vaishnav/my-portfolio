@@ -85,7 +85,7 @@
 }
 
 
-@media (max-width:300px) {
+@media (max-width:600px) {
     .slider{
       max-width: 250px;
     }
