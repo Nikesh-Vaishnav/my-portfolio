@@ -82,7 +82,6 @@
   }
 
   .footer ul {
-    flex-direction: column; /* Stack items */
     gap: 5px;
   }
 
