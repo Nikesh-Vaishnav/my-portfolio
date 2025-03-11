@@ -1,8 +1,8 @@
 /* Skills Section */
 .skills {
-  min-height: 100vh; /* Ensure it adapts to content */
+  min-height: 99vh; /* Ensure it adapts to content */
   background: linear-gradient(135deg, #3e3e3e, #ea3aed);
-  padding: 40px 10px;
+  padding: 1px;
   text-align: center;
 }
 
@@ -12,7 +12,6 @@
   text-transform: uppercase;
   font-size: 3rem;
   margin-bottom: 20px;
-  color: white;
 }
 
 /* Skills Grid */
@@ -70,6 +69,7 @@
 
 @media (max-width: 500px) {
   .skills-container {
+    margin-bottom: 50px;
       grid-template-columns: repeat(1, 1fr);
   }
 }

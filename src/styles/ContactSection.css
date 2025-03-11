@@ -1,44 +1,58 @@
-.contact{
-  height: 99vh;
-  padding: 1px;
-  background: linear-gradient(135deg,  #3e3e3e, #ea3aed , #3e3e3e );
+/* Contact Section */
+.contact {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3e3e3e, #ea3aed, #3e3e3e);
+  display: flex;
+  flex-direction: column;
+  justify-content:baseline;
+  align-items: center;
 }
 
-.contact h1{
+/* Contact Heading */
+.contact h1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
-  padding: 0%;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
 }
 
-
+/* Contact Section Layout */
 .contact-section {
   display: flex;
-  margin-top: 100px;
-  flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 100px;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /* Left Section - Contact Info */
 .contact-left {
-  width: 50%;
-  height: 300px;
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
 }
 
 .contact-left h2 {
-  font-size: 35px;
+  font-size: 2rem;
   margin-bottom: 15px;
+  color: white;
 }
 
 .contact-left p {
-  font-size: 18px;
+  font-size: 1rem;
   margin-bottom: 10px;
+  color: white;
 }
 
+/* Social Links */
 .social-links {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
@@ -55,31 +69,26 @@
   align-items: center;
   text-decoration: none;
   color: aquamarine;
-  font-size: 18px;
-  transition: transform 0.3s ease-in-out;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease-in-out, color 0.3s ease;
 }
 
 .social-item a:hover {
   transform: scale(1.1);
+  color: white;
 }
 
 /* Icon Styles */
 .social-item svg {
-  font-size: 24px;
+  font-size: 1.8rem;
 }
 
-
-/* Individual social media colors */
-/* .github a { color: #333; }
-.linkedin a { color: #0077b5; }
-.x a { color: #1da1f2; }
-.instagram a { color: #e4405f; } */
-
-/* Right Section - Map */
+/* Right Section - Google Map */
 .contact-right {
-  width: 50%;
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
 }
-
 
 .contact-right iframe {
   width: 100%;
@@ -88,16 +97,18 @@
   border: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* 🔹 Fully Responsive Design */
+@media (max-width: 1024px) {
   .contact-section {
     flex-direction: column;
-    height: auto;
+    text-align: center;
+    padding: 20px;
   }
 
-  .contact-left, .contact-right {
+  .contact-left,
+  .contact-right {
     width: 100%;
-    text-align: center;
+    padding: 20px;
   }
 
   .social-links {
@@ -106,5 +117,58 @@
 
   .contact-right iframe {
     height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact h1 {
+    font-size: 2.4rem;
+  }
+
+  .contact-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-left p {
+    font-size: 1rem;
+  }
+
+  .social-item a {
+    font-size: 1rem;
+  }
+
+  .contact-right iframe {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 10px;
+  }
+
+  .contact h1 {
+    font-size: 2rem;
+  }
+
+  .contact-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-left p {
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+
+  .social-item a {
+    font-size: 0.9rem;
+  }
+
+  .contact-right iframe {
+    height: 200px;
+    margin: auto;
   }
 }
