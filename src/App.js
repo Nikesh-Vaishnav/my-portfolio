@@ -17,6 +17,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<ProjectsSection />} />
         <Route path="/contact" element={<ContactSection />} />
+      
       </Routes>
       <Footer /> {/* Footer should be outside Routes */}
     </div>
