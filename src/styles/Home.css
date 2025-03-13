@@ -131,7 +131,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .slide-content h1 {
     font-size: 1.8rem;
   }
