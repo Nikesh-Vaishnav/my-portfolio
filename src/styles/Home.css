@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #3e3e3e, #ea3aed);
+  background: linear-gradient(135deg, #3e3e3e, rgb(24, 60, 24));
   color: white;
   padding: 0px;
 }
@@ -131,7 +131,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .slide-content h1 {
     font-size: 1.8rem;
   }

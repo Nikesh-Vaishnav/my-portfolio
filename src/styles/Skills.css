@@ -1,7 +1,7 @@
 /* Skills Section */
 .skills {
   min-height: 99vh; /* Ensure it adapts to content */
-  background: linear-gradient(135deg, #3e3e3e, #ea3aed);
+  background: linear-gradient(135deg, #3e3e3e, rgb(24, 60, 24));
   padding: 1px;
   text-align: center;
 }

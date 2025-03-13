@@ -1,7 +1,7 @@
 .about {
   height: 99vh;
   padding: 1px;
-  background: linear-gradient(135deg, #3e3e3e, #ea3aed);
+  background: linear-gradient(135deg, #3e3e3e, rgb(24, 60, 24));
 }
 
 .about h1 {
