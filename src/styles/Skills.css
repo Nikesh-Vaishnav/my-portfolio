@@ -1,12 +1,14 @@
-/* Skills Section */
+/* General Styles */
 .skills {
   min-height: 99vh; /* Ensure it adapts to content */
-  background: linear-gradient(135deg, #3e3e3e, rgb(24, 60, 24));
+  background: #000;
+  color: white;
   padding: 1px;
   text-align: center;
+  padding-bottom: 50px;
 }
 
-/* Section Heading */
+/* Section Headings */
 .skills h1 {
   text-align: center;
   text-transform: uppercase;
@@ -14,8 +16,8 @@
   margin-bottom: 20px;
 }
 
-/* Skills Grid */
-.skills-container {
+/* 🔹 Shared Grid Layout for Skills and Tools */
+.skills-container, .tools-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
@@ -24,33 +26,32 @@
   padding: 20px;
 }
 
-/* Skill Box */
-.skill-box {
+/* 🔹 Shared Box Style for Skills and Tools */
+.skill-box, .tool-box {
   background: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.5px 1px 2px rgb(179, 107, 107);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   color: white;
   text-align: center;
 }
 
-/* Skill Box Hover Effect */
-.skill-box:hover {
+/* Hover Effects */
+.skill-box:hover, .tool-box:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.1); /* Light fade effect */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
 }
 
-/* Skill Icon */
-.skill-box .icon {
+/* Icon Styling */
+.skill-box .icon, .tool-box .icon {
   font-size: 3rem;
   margin-bottom: 10px;
-  color: aqua;
 }
 
-/* Skill Name */
-.skill-name {
+/* Skill & Tool Name */
+.skill-name, .tool-name {
   font-size: 1.2rem;
   font-weight: 600;
   color: white;
@@ -62,14 +63,13 @@
       min-height: auto;
   }
 
-  .skills-container {
+  .skills-container, .tools-container {
       grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 500px) {
-  .skills-container {
-    margin-bottom: 50px;
+  .skills-container, .tools-container {
       grid-template-columns: repeat(1, 1fr);
   }
 }

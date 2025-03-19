@@ -1,8 +1,9 @@
 .projects-section {
   text-align: center;
-  background: linear-gradient(135deg, #3e3e3e, rgb(24, 60, 24));
-  min-height: 99vh;
-  padding: 1px;
+  background: #000;
+  color: white;
+  height: 100vh;
+  padding: 0.1px 0 0 0 ;
 }
 
 .projects-section h1{
@@ -23,7 +24,7 @@
 .project-card {
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0.3, 0.3, 0.3, 1);
+  box-shadow: 0 10px 30px rgb(179, 107, 107);
   width: 100%;
   max-width: 300px; /* Ensures consistency */
   height: 300px;
@@ -59,6 +60,10 @@
 }
 
 @media (max-width: 768px) {
+  .projects-section{
+    height: auto;
+  }
+
   .projects-section h2 {
       font-size: 2.5rem;
   }

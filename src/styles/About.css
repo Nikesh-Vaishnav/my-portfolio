@@ -1,7 +1,8 @@
 .about {
-  height: 99vh;
-  padding: 1px;
-  background: linear-gradient(135deg, #3e3e3e, rgb(24, 60, 24));
+  color: white;
+  height: 100vh;
+  padding: 0.1px 0 0 0 ;
+  background: #000;
 }
 
 .about h1 {
@@ -26,7 +27,7 @@
   max-width: 1000px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0.3, 0.3, 0.3, 1);
+  box-shadow: 0 10px 30px rgb(179, 107, 107);
   width: 100%;
 }
 

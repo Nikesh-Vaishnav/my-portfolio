@@ -1,6 +1,8 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaSass, FaGithub } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGithub, FaCode } from "react-icons/fa";
+import { SiTailwindcss, SiVisualstudiocode } from "react-icons/si";
+import { SiVisualstudioCode } from "react-icons/si";
+
 import "./styles/Skills.css"; // Import CSS
 
 const skills = [
@@ -10,8 +12,12 @@ const skills = [
   { name: "React.js", icon: <FaReact className="icon" style={{ color: "#61DAFB" }} /> },
   { name: "Bootstrap", icon: <FaBootstrap className="icon" style={{ color: "#7952B3" }} /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="icon" style={{ color: "#38B2AC" }} /> },
-  { name: "SASS", icon: <FaSass className="icon" style={{ color: "#CC6699" }} /> },
+];
+
+const tools = [
   { name: "Git & GitHub", icon: <FaGithub className="icon" style={{ color: "#333" }} /> },
+  // { name: "VS Code", icon: <SiVisualstudioCode className="icon" style={{ color: "#007ACC" }} /> },
+  { name: "Code Editor", icon: <FaCode className="icon" style={{ color: "#FF5733" }} /> },
 ];
 
 const Skills = () => {
@@ -23,6 +29,16 @@ const Skills = () => {
           <div key={index} className="skill-box">
             {skill.icon}
             <p className="skill-name">{skill.name}</p>
+          </div>
+        ))}
+      </div>
+      
+      <h1>Tools</h1>
+      <div className="tools-container">
+        {tools.map((tool, index) => (
+          <div key={index} className="tool-box">
+            {tool.icon}
+            <p className="tool-name">{tool.name}</p>
           </div>
         ))}
       </div>
