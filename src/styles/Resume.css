@@ -1,0 +1,48 @@
+/* Resume Section */
+.resume-section {
+  min-height: 100vh;
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 0.1px 0 60px 0;
+}
+
+/* Section Title */
+.resume-section h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 0% 0 50px 0;
+}
+
+/* Resume Container */
+.resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Embedded PDF Viewer */
+.resume-viewer {
+  width: 60%;
+  height: 1100px;
+  border: none;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: yellow;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+
+}
+
+.download-btn:hover {
+  background: gold;
+}
