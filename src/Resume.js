@@ -8,12 +8,8 @@ const Resume = () => {
     <section className="resume-section">
       <h1>My Resume</h1>
       <div className="resume-container">
-        {/* Embedded PDF */}
-        <iframe
-          src={resumePath}
-          title="Nikesh Vaishnav Resume"
-          className="resume-viewer"
-        ></iframe>
+        {/* Embedded PDF using embed */}
+        <embed src={resumePath} type="application/pdf" className="resume-viewer" />
       </div>
       {/* Download Button */}
       <a href={resumePath} download="resume.pdf" className="download-btn">

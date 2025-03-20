@@ -1,87 +1,115 @@
+/* About Section */
 .about {
   color: white;
-  height: 100vh;
-  padding: 0.1px 0 0 0 ;
+  min-height: 100vh;
+  padding: 20px 0;
   background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* Section Title */
 .about h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 3rem;
-  padding: 0%;
+  margin-bottom: 20px;
 }
 
+/* About Section Container */
 .about-section {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 20px;
+  width: 100%;
 }
 
+/* About Content Box */
 .about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1000px;
-  padding: 20px;
-  border-radius: 10px;
+  max-width: 900px;
+  padding: 30px;
+  border-radius: 12px;
   box-shadow: 0 10px 30px rgb(179, 107, 107);
-  width: 100%;
+  width: 90%;
+  backdrop-filter: blur(10px);
 }
 
+/* About Text */
 .about-text p {
-  font-size: 25px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
   opacity: 0.9;
   line-height: 1.6;
 }
 
-/* ✅ Resume Button Styling */
-.resume-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  background: linear-gradient(135deg, #000000, #3e3e3e);
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: all 0.3s ease;
+/* Education Section */
+.education-section {
+  margin-top: 30px;
+  text-align: left;
+  width: 100%;
 }
 
-.resume-btn:hover {
-  background: linear-gradient(135deg, #3e3e3e , #000000);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
-  transform: scale(1.1);
+.education-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.education-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education-section li {
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.education-section li:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-container {
-    padding: 30px;
+    padding: 25px;
   }
 
   .about-text p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
-  .resume-btn {
+  .education-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .education-section li {
     font-size: 16px;
-    padding: 10px 20px;
   }
 }
 
 @media (max-width: 480px) {
   .about-text p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
-  .resume-btn {
+  .education-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .education-section li {
     font-size: 14px;
-    padding: 8px 18px;
+    padding: 10px;
   }
 }

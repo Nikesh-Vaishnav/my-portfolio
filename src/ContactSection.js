@@ -17,7 +17,7 @@ const ContactSection = () => {
             <div className="social-item linkedin">
               <FaLinkedin />
               <a
-                href="https://www.linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -27,14 +27,14 @@ const ContactSection = () => {
             <div className="social-item github">
               <FaGithub />
               <a
-                href="https://github.com/yourgithub"
+                href="https://github.com/Nikeshvaishnav377"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 GitHub
               </a>
             </div>
-            <div className="social-item x">
+            {/* <div className="social-item x">
               <FaXTwitter />
               <a
                 href="https://twitter.com/yourtwitter"
@@ -43,11 +43,11 @@ const ContactSection = () => {
               >
                 X (Twitter)
               </a>
-            </div>
+            </div> */}
             <div className="social-item instagram">
               <FaInstagram />
               <a
-                href="https://instagram.com/yourinstagram"
+                href="https://www.instagram.com/_nikesh_vaishnav_/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
