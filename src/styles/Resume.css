@@ -4,14 +4,13 @@
   background: #000;
   color: white;
   text-align: center;
-  padding: 20px 0 60px 0;
+  padding: 70px 0 60px 0;
 }
 
 /* Section Title */
 .resume-section h1 {
   text-transform: uppercase;
-  font-size: 3rem;
-  padding-bottom: 50px;
+  font-size: 2rem;
 }
 
 /* Resume Container */

@@ -1,7 +1,6 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGithub, FaCode } from "react-icons/fa";
-import { SiTailwindcss, SiVisualstudiocode } from "react-icons/si";
-import { SiVisualstudioCode } from "react-icons/si";
+import { SiTailwindcss,SiVsco,SiVercel , SiVscodium } from "react-icons/si";
 
 import "./styles/Skills.css"; // Import CSS
 
@@ -15,9 +14,10 @@ const skills = [
 ];
 
 const tools = [
-  { name: "Git & GitHub", icon: <FaGithub className="icon" style={{ color: "#333" }} /> },
-  // { name: "VS Code", icon: <SiVisualstudioCode className="icon" style={{ color: "#007ACC" }} /> },
+  { name: "Git & GitHub", icon: <FaGithub className="icon" style={{ color: "red" }} /> },
   { name: "Code Editor", icon: <FaCode className="icon" style={{ color: "#FF5733" }} /> },
+  { name: "VS Code", icon: <SiVscodium className="icon" style={{ color: "#007ACC" }} /> },
+  { name: "Vercel", icon: <SiVercel className="icon" style={{ color: "aqua" }} /> }, 
 ];
 
 const Skills = () => {

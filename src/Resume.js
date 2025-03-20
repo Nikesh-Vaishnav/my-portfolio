@@ -6,12 +6,10 @@ const Resume = () => {
 
   return (
     <section className="resume-section">
-      <h1>My Resume</h1>
       <div className="resume-container">
-        {/* Embedded PDF using embed */}
+      <h1>My Resume</h1>
         <embed src={resumePath} type="application/pdf" className="resume-viewer" />
       </div>
-      {/* Download Button */}
       <a href={resumePath} download="resume.pdf" className="download-btn">
         Download Resume
       </a>

@@ -4,32 +4,38 @@
   background: #000;
   display: flex;
   flex-direction: column;
-  justify-content:baseline;
+  justify-content: center; /* Center content properly */
   align-items: center;
   color: white;
+  padding: 40px 20px;
 }
 
 /* Contact Heading */
 .contact h1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-/* Contact Section Layout */
+/* Contact Container */
+.contact-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgb(179, 107, 107);
+}
+
+/* Contact Section */
 .contact-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgb(179, 107, 107);
+  gap: 20px;
 }
 
 /* Left Section - Contact Info */
@@ -49,37 +55,7 @@
   margin-bottom: 10px;
 }
 
-/* Social Links */
-.social-links {
-  margin-top: 30px;
-  gap: 20px;
-  flex-wrap: wrap;
-}
 
-.social-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.social-item a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: aquamarine;
-  font-size: 1.5rem;
-  transition: transform 0.3s ease-in-out, color 0.3s ease;
-}
-
-.social-item a:hover {
-  transform: scale(1.1);
-  color: white;
-}
-
-/* Icon Styles */
-.social-item svg {
-  font-size: 1.8rem;
-}
 
 /* Right Section - Google Map */
 .contact-right {
@@ -97,10 +73,13 @@
 
 /* 🔹 Fully Responsive Design */
 @media (max-width: 1024px) {
+  .contact-container {
+    padding: 20px;
+  }
+
   .contact-section {
     flex-direction: column;
     text-align: center;
-    padding: 10px;
   }
 
   .contact-left,
@@ -108,17 +87,12 @@
     padding: 10px;
   }
 
-  .social-links {
-    justify-content: center;
-  }
-
   .contact-right iframe {
-    height: 200px;
+    height: 250px;
   }
 }
 
 @media (max-width: 768px) {
-
   .contact-left h2 {
     font-size: 1.8rem;
   }
@@ -127,9 +101,6 @@
     font-size: 1rem;
   }
 
-  .social-item a {
-    font-size: 1rem;
-  }
 
   .contact-right iframe {
     height: 200px;
@@ -138,7 +109,7 @@
 
 @media (max-width: 480px) {
   .contact {
-    padding: 10px;
+    padding: 15px;
   }
 
   .contact-left h2 {
@@ -149,15 +120,9 @@
     font-size: 0.9rem;
   }
 
-  .social-links {
-    gap: 25px;
-  }
 
-  .social-item a {
-    font-size: 0.9rem;
-  }
 
   .contact-right iframe {
-    height: 150px;
+    height: 180px;
   }
 }

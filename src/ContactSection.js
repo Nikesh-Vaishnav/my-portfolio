@@ -1,11 +1,11 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import "./styles/ContactSection.css";
 
 const ContactSection = () => {
   return (
     <section className="contact">
       {/* Left Section - Contact Info & Social Links */}
+      <div className="contact-container">
       <h1>Contact Me</h1>
       <div className="contact-section">
         <div className="contact-left">
@@ -13,48 +13,6 @@ const ContactSection = () => {
           <p>Phone: +91 7023003622</p>
           <p>Email: nikeshvaishnav377@gmail.com</p>
 
-          <div className="social-links">
-            <div className="social-item linkedin">
-              <FaLinkedin />
-              <a
-                href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </div>
-            <div className="social-item github">
-              <FaGithub />
-              <a
-                href="https://github.com/Nikeshvaishnav377"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-            {/* <div className="social-item x">
-              <FaXTwitter />
-              <a
-                href="https://twitter.com/yourtwitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                X (Twitter)
-              </a>
-            </div> */}
-            <div className="social-item instagram">
-              <FaInstagram />
-              <a
-                href="https://www.instagram.com/_nikesh_vaishnav_/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Right Section - Google Maps Iframe */}
@@ -66,6 +24,7 @@ const ContactSection = () => {
             title="Google Map"
           ></iframe>
         </div>
+      </div>
       </div>
     </section>
   );

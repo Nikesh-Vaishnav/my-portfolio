@@ -1,19 +1,26 @@
-import "./styles/Footer.css";
-import { Link } from "react-router-dom";
-import { FaHome, FaUser, FaProjectDiagram, FaTools, FaEnvelope, FaFilePdf } from "react-icons/fa";
+import React from "react";
+import { FaInstagram, FaLinkedin, FaTelegram, FaGithub } from "react-icons/fa";
+import "./styles/Footer.css"; // Import CSS file
 
 function Footer() {
   return (
-    <div className="footer">
-      <ul>
-        <li><Link to="/"><FaHome className="logo"/><br/>HOME</Link></li>
-        <li><Link to="/about"><FaUser className="logo"/><br/>About</Link></li>
-        <li><Link to="/skills"><FaProjectDiagram className="logo"/><br/>Skills</Link></li>
-        <li><Link to="/resume"><FaFilePdf className="logo"/><br/>Resume</Link></li>
-        <li><Link to="/projects"><FaTools className="logo"/><br/>Projects</Link></li>
-        <li><Link to="/contact"><FaEnvelope className="logo"/><br/>Contact Us</Link></li>
-      </ul>
-    </div>
+    <footer className="footer">
+      <div className="social-icons">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <FaInstagram />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin />
+        </a>
+        <a href="https://t.me" target="_blank" rel="noopener noreferrer">
+          <FaTelegram />
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <FaGithub />
+        </a>
+      </div>
+      <p className="copyright">© {new Date().getFullYear()} Nikesh Vaishnav. All Rights Reserved.</p>
+    </footer>
   );
 }
 
