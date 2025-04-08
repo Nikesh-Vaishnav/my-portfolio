@@ -12,7 +12,7 @@ function Footer() {
         <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
-        <a href="https://t.me" target="_blank" rel="noopener noreferrer">
+        <a href="https://web.telegram.org/a/" target="_blank" rel="noopener noreferrer">
           <FaTelegram />
         </a>
         <a href="https://www.instagram.com/_nikesh_vaishnav_/" target="_blank" rel="noopener noreferrer">
