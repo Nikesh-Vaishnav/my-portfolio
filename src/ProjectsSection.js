@@ -5,7 +5,7 @@ const projects = [
   {
     name: "DevWithNik (Blogging Website)",
     description: "A blogging website built with Bootstrap, covering basic web development topics.",
-    githubLink: "https://nikeshvaishnav377.github.io/DevWithNik/", // Replace with your GitHub link
+    githubLink: "https://nikesh-vaishnav.github.io/DevWithNik/", // Replace with your GitHub link
   },
   {
     name: "RajTrail (Rajasthan Tourism)",
