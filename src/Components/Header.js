@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./styles/Header.css";
+import "../styles/Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/Resume.css"; // Import CSS
+import "../styles/Resume.css"; // Import CSS
 
 const Resume = () => {
   const resumePath = process.env.PUBLIC_URL + "/resume.pdf";

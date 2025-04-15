@@ -1,8 +1,8 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGithub, FaCode } from "react-icons/fa";
-import { SiTailwindcss,SiVsco,SiVercel , SiVscodium } from "react-icons/si";
+import { SiTailwindcss,SiVercel , SiVscodium } from "react-icons/si";
 
-import "./styles/Skills.css"; // Import CSS
+import "../styles/Skills.css"; // Import CSS
 
 const skills = [
   { name: "HTML5", icon: <FaHtml5 className="icon" style={{ color: "#E44D26" }} /> },
